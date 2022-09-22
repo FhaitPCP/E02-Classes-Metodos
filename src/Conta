@@ -1,0 +1,20 @@
+class Conta {
+  String numero ;
+  String dono ;
+  double saldo ;
+  double limite ;
+
+  void sacar(double quantia){
+    double novoSaldo = this.saldo - quantia ;
+    this.saldo = novoSaldo ;
+  }
+  void deposita (double quantia){
+    this.saldo += quantia ;
+  }
+   void imprimir(){
+      System.out.println("nome:"+ this.dono);
+      System.out.println("numero:"+ this.numero);
+      System.out.println("limite:"+ this.limite);
+      System.out.println("saldo:"+ this.saldo);
+    }
+}

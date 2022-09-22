@@ -1,0 +1,25 @@
+class Main {
+  public static void main(String[] args) {
+    Conta conta;
+    conta = new Conta();
+
+    conta.dono = "joao";
+    conta.numero = "150454-56";
+    conta.saldo = 150;
+    conta.limite = 15_000;
+
+    conta.imprimir();
+
+    Cliente cliente;
+
+    cliente = new Cliente();
+
+    cliente.nome = "Joao Victor";
+    cliente.cpf = "100010001";
+    cliente.endereco = "rua dos bobos,numero 0";
+    cliente.sexo = "masculino";
+    cliente.idade = 25;
+
+    cliente.imprimir();
+  }
+}
